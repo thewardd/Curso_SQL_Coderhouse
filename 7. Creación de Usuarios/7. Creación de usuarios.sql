@@ -19,9 +19,6 @@
 		GRANT SELECT, INSERT, UPDATE ON sistema_gestion_personal.* TO 'sector_rrhh'@'localhost';
 		REVOKE SELECT ON sistema_gestion_personal.* FROM 'sector_rrhh'@'localhost';
 
-
-
-
 	-- Usuario 02: Sector_Finanzas (Permisos de sólo lectura sobre la tabla Eventos (No puede eliminar registros))
 
 		CREATE USER 'sector_finanzas'@'localhost' IDENTIFIED BY 'password'; 
