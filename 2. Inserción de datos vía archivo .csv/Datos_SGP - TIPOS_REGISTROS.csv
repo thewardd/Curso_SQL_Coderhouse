@@ -1,0 +1,10 @@
+ID_TIPO_REGISTRO,TIPO,FECHA_REGISTRO,DESCRIPCION
+ID_T_1,Ausencia,2020-11-05,Descripcion_1
+ID_T_2,Llamada de atencion,2020-11-05,Descripcion_2
+ID_T_3,Guardia,2020-11-05,Descripcion_3
+ID_T_4,Vacaciones,2020-11-05,Descripcion_4
+ID_T_5,Nota,2020-11-05,Descripcion_5
+ID_T_6,Horas Extras,2020-11-05,Descripcion_6
+ID_T_7,Cambio de turno,2020-11-05,Descripcion_7
+ID_T_8,Bono por productividad,2020-11-05,Descripcion_8
+ID_T_9,Dia libre,2020-11-05,Descripcion_9

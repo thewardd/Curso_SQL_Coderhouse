@@ -1,0 +1,17 @@
+
+                                PROYECTO FINAL ~ CURSO SQL ~ LAUTARO LASALA
+	
+/*************************************************************************************************************/
+/*******************************************  DATOS PARA TESTEAR BD ******************************************/	
+/*************************************************************************************************************/
+
+Para poder realizar una inserción de datos en la base de datos del sistema de gestión de personal se elaboró 
+un esquema de tablas con datos ficticios en Google Sheets. Teniendo en cuenta cada campo a llenar en la base 
+de datos en Workbench se utilizaron funciones que permitieron generar aleatoriedad en los valores de los 
+registros. Acercando la experiencia a lo que sería el funcionamiento real del sistema y la base de datos.
+
+Luego se realizó el procedimiento de importación de datos utilizando el Asistente de importación que ofrece
+MySQL Workbench. 
+
+Se ofrece en la presente carpeta los archivos .csv para poder testear el proyecto final.
+        
