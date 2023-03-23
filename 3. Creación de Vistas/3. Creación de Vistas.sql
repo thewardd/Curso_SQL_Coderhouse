@@ -4,7 +4,7 @@
 	/**************************************  SCRIPT PARA CREACIÓN DE VISTAS **************************************/	
 	/*************************************************************************************************************/
     
-    CREATE SCHEMA IF NOT EXISTS Sistema_Gestion_Personal;
+  	CREATE SCHEMA IF NOT EXISTS Sistema_Gestion_Personal;
 	USE Sistema_Gestion_Personal;
     
     
@@ -24,7 +24,7 @@
 							);
 		SELECT * FROM Personal_Edad;
 
--- Vista 04: Cantidad de llamadas de atención en el presente mes
+	-- Vista 04: Cantidad de llamadas de atención en el presente mes
 		CREATE OR REPLACE VIEW Llamadas_atencion AS (
 								SELECT 
 										COUNT(ID_EVENTO) as 'Llamadas de atención realizadas este mes'
