@@ -4,7 +4,7 @@
 	/**************************************  SCRIPT PARA CREACIÓN DE TABLAS **************************************/	
 	/*************************************************************************************************************/
     
-    CREATE SCHEMA IF NOT EXISTS Sistema_Gestion_Personal;
+   	CREATE SCHEMA IF NOT EXISTS Sistema_Gestion_Personal;
 	USE Sistema_Gestion_Personal;
     
 	CREATE TABLE Personal (
