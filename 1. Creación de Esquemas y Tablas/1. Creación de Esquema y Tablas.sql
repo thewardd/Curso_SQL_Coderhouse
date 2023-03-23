@@ -48,47 +48,47 @@
 						);
 
 	CREATE TABLE Formacion (
-								ID_Formacion varchar(10) NOT NULL,
-								Formacion varchar(40),
-								Fecha_Registro datetime,
-								Observaciones varchar(300),
-								PRIMARY KEY (ID_Formacion) 
-							);											
+							ID_Formacion varchar(10) NOT NULL,
+							Formacion varchar(40),
+							Fecha_Registro datetime,
+							Observaciones varchar(300),
+							PRIMARY KEY (ID_Formacion) 
+						);											
 	
 	CREATE TABLE Reportes (
-									ID_Reporte varchar(10),
-									ID_Personal varchar(10),
-									Fecha_Registro datetime,
-									Fecha_Desde_Rep datetime,
-									Fecha_Hasta_Rep datetime,
-									PRIMARY KEY (ID_Reporte),
-									FOREIGN KEY (ID_Personal) REFERENCES Personal(ID_Personal)
-								);
+							ID_Reporte varchar(10),
+							ID_Personal varchar(10),
+							Fecha_Registro datetime,
+							Fecha_Desde_Rep datetime,
+							Fecha_Hasta_Rep datetime,
+							PRIMARY KEY (ID_Reporte),
+							FOREIGN KEY (ID_Personal) REFERENCES Personal(ID_Personal)
+						);
                                 
 	CREATE TABLE Tipos_Registros (
-													ID_Tipo_Registro varchar(10),
-													Tipo varchar(30),
-													Fecha_Registro datetime,
-													Descripcion varchar(300),
-													PRIMARY KEY (ID_Tipo_Registro)
-												);
+							ID_Tipo_Registro varchar(10),
+							Tipo varchar(30),
+							Fecha_Registro datetime,
+							Descripcion varchar(300),
+							PRIMARY KEY (ID_Tipo_Registro)
+						);
 											
 	CREATE TABLE Eventos (
-													ID_Evento varchar(10),
-													ID_Personal varchar(10),
-													Fecha_Registro datetime,
-													ID_Tipo_Registro varchar(10),
-													Fecha_Desde datetime,
-													Fecha_Hasta datetime,
-													Descripcion varchar(300),
-													Detalle_1 varchar(300),
-													Detalle_2 varchar(300),
-													Documento_Adjunto varchar(500),
-													Horas_Extras int,
-													Minutos_extras int,
-													Dias_Vacaciones int,
-													Monto float(10,2),
-													PRIMARY KEY (ID_Evento),
-													FOREIGN KEY (ID_Personal) REFERENCES Personal(ID_Personal),
-													FOREIGN KEY (ID_Tipo_Registro) REFERENCES Tipos_Registros(ID_Tipo_Registro)
-												);	
+							ID_Evento varchar(10),
+							ID_Personal varchar(10),
+							Fecha_Registro datetime,
+							ID_Tipo_Registro varchar(10),
+							Fecha_Desde datetime,
+							Fecha_Hasta datetime,
+							Descripcion varchar(300),
+							Detalle_1 varchar(300),
+							Detalle_2 varchar(300),
+							Documento_Adjunto varchar(500),
+							Horas_Extras int,
+							Minutos_extras int,
+							Dias_Vacaciones int,
+							Monto float(10,2),
+							PRIMARY KEY (ID_Evento),
+							FOREIGN KEY (ID_Personal) REFERENCES Personal(ID_Personal),
+							FOREIGN KEY (ID_Tipo_Registro) REFERENCES Tipos_Registros(ID_Tipo_Registro)
+						);	
