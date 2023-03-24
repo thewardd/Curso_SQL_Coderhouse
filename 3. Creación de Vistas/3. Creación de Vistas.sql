@@ -26,12 +26,12 @@
 
 	-- Vista 04: Cantidad de llamadas de atención en el presente mes
 		CREATE OR REPLACE VIEW Llamadas_atencion AS (
-								SELECT 
-										COUNT(ID_EVENTO) as 'Llamadas de atención realizadas este mes'
-								FROM Eventos
-								WHERE 
-									MONTH(Fecha_Desde) = MONTH(NOW()) 
-										AND YEAR(Fecha_Desde) = YEAR(NOW()) AND ID_TIPO_REGISTRO = 'ID_T_3'
+							SELECT 
+									COUNT(ID_EVENTO) as 'Llamadas de atención realizadas este mes'
+							FROM Eventos
+							WHERE 
+								MONTH(Fecha_Desde) = MONTH(NOW()) 
+									AND YEAR(Fecha_Desde) = YEAR(NOW()) AND ID_TIPO_REGISTRO = 'ID_T_3'
 							);
 		SELECT * FROM Llamadas_atencion;
         
